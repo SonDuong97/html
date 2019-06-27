@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Post new job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Post new job</h1>
+        <form action="post_job.html">
+            <div>
+                <p>Category</p>
+                <select name="category" id="category">
+                    <option>Selection...</option>
+                    <option value="1">IT</option>
+                    <option value="2">Sale</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <span>Title</span>
+                <br>
+                <input type="text" name="title" id="title" class="width-15" value="text">
+                <br>
+            </div>
+            <br>
+            <div>
+                <span>Description</span>
+                <br>
+                <textarea name="description" id="description" cols="30" rows="5">text</textarea>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="public" value="public" checked> public
+                <input type="radio" name="private" value="private"> private
+            </div>
+            <br>
+            <button type="submit" class="btn-submit">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>
